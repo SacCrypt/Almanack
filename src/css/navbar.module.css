@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: rgb(211, 211, 211, 0.3); 
+    height: 5em;
+    display: flex;  
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #0077b5;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5em;
+    position: relative;
+}
+
+.logo::before{
+    content: "";
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 150px;
+    border: 2px solid #0077b5;
+    margin-right: 0.4em;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:800px){
+    .logo{
+        font-size: 14px;
+    }
+}

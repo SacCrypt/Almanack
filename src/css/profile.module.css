@@ -1,0 +1,251 @@
+.container {
+    width: calc(70vw);
+    height: 60em;
+    border: 4px solid rgb(211, 211, 211, 0.4);
+    border-radius: 15px;
+    margin: 5em 15em;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileBox {
+    background-color: rgb(211, 211, 211, 0.3);
+    width: calc(60vw);
+    margin: 1.25em;
+    height: 50%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 60%;
+    left: 40%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.info *{
+    text-transform: capitalize;
+}
+
+.upperinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.bio {
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+.rightbio{
+    color: grey;
+}
+
+.name{
+    font-size: 22px;
+    color:#0077b5;
+    font-weight: bolder;
+}
+
+.occupation {
+    margin-top: -1em;
+    font-size: 16px;    
+}
+
+.location {
+    font-size: 14px;
+    color: grey;
+}
+
+.photoContainer{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    padding: 3em 7em;
+    width: 10em;
+    align-items:center;
+}
+
+.photo{
+    background-image: url("../images//profilepic.jpg");
+    border-radius: 150px;
+    width: 10em;
+    height: 10em;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 3px solid #0077b5;
+    background-clip: content-box;
+    padding: 2px;
+}
+
+.linksContainer{
+    display: flex;
+    gap: 1em;
+}
+
+.linksContainer a{
+    border-radius: 150px;
+    width: 2em;
+    height: 2em;
+    background-size: cover;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.twitter{
+    background-image: url("../images/twitter.png");
+}
+
+.linkedin{
+    background-image: url("../images/linkedin.png");
+}
+
+.github{
+    background-image: url("../images/github-sign.png");
+}
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.portfolio h2{
+    color:#0077b5
+}
+
+table{
+    width: calc(40vw);
+    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px rgb(211, 211, 211, 1);    
+}
+
+hr {
+    width: calc(30vw);
+}
+
+th{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+td{
+    color: rgba(108, 113, 161, 0.8);
+}
+
+td, th{
+    text-align: left;  
+    border-right: 2px solid rgb(211, 211, 211, 0.6);
+}
+
+td:last-child a{
+    padding-left: 2em;
+    text-decoration: none;
+}
+
+
+td:nth-child(1) {
+    text-align: center;
+}
+
+th:nth-child(odd){
+    text-align: center;
+}
+
+.firstHead{
+    border-top-left-radius: 30px;
+}
+
+.lastHead{
+    border-top-right-radius: 30px;
+}
+
+th{
+    background-color: rgb(211, 211, 211, 0.3);
+   
+}
+
+table *{
+    padding: .5em;
+}
+
+button{
+    background-color:#0077b5;
+    padding: 1em;
+    border-radius: 20px;
+    width: 10em;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+@media (max-width:800px) {
+    .info{
+        margin-right: 0.6em;
+    }
+    .container{
+        margin: 1em;
+        width: calc(90vw);
+        align-items: center;
+    }
+
+    .photo{
+        width: 5em;
+        height: 5em;
+    }
+
+    .linksContainer a {
+        height: 1em;
+        width: 1em;
+    }
+    .bio{
+        margin-right: 1em;
+    }
+    .name{
+        font-size: 12px;
+    }
+
+    .occupation{
+        font-size: 12px;
+    }
+
+    .profileBox{
+        width: calc(80vw);
+    }
+
+    .rightbio{
+        font-size: 12px;
+    }
+
+    .portfolio{
+        width: 60%;
+    }
+
+    table{
+        width: calc(40vw);
+    }
+    td{
+        font-size: 13px;
+    }
+
+    th{
+        font-size: 15px;
+    }
+    hr{
+        width: calc(30vw);
+    }
+
+}
